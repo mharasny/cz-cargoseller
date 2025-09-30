@@ -28,7 +28,7 @@ const ContactSection = () => {
               <div className="flex w-full items-center gap-[30px] whitespace-nowrap mt-2 px-2">
                 <img src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/aa3435c5b8c0f2a905f217c9789e73340e929a27?placeholderIfAbsent=true" alt="Email" className="aspect-[0.93] object-contain w-[37px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px]" />
                 <div className="text-white self-stretch my-auto">
-                  kontakt@cargoseller.pl
+                  wioleta@cargoseller.cz
                 </div>
               </div>
             </div>
