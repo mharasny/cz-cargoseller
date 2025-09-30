@@ -20,7 +20,7 @@ const ContactSection = () => {
                   style={{ aspectRatio: '54.76/60.00' }}
                 />
                 <div className="text-zielony font-roboto-condensed text-[20px] font-bold leading-6 self-stretch my-auto">
-                  Obsługa Klienta
+                  Zákaznický servis
                 </div>
               </div>
               <div className="flex w-full items-center gap-[30px] mt-2 px-2">
@@ -62,7 +62,7 @@ const ContactSection = () => {
                   className="aspect-[0.92] object-contain w-[55px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px]"
                 />
                 <div className="text-zielony font-roboto-condensed text-[20px] font-bold leading-6 self-stretch my-auto">
-                  Wsparcie techniczne
+                  Technická podpora
                 </div>
               </div>
               <div className="flex w-full items-center gap-[30px] text-lg text-white font-normal whitespace-nowrap leading-none mt-2 px-2">
@@ -98,9 +98,9 @@ const ContactSection = () => {
             </div>
           </div>
           <div className="text-white font-roboto-condensed text-lg font-normal leading-6 self-stretch w-[821px] my-auto pl-5 max-md:max-w-full">
-            Cyfrowe narzędzia i integracje z giełdami do Twojej
-            dyspozycji.Wykorzystaj je, aby sprzedawać ładunki spot szybciej,
-            wygodniej, skuteczniej.
+            Digitální nástroje a integrace s burzami k vaší
+            dispozici. Využijte je k prodeji spotových nákladů rychleji,
+            pohodlněji, efektivněji.
           </div>
         </div>
         
@@ -110,7 +110,7 @@ const ContactSection = () => {
           </div>
           <div className="flex items-stretch gap-[40px_80px] max-md:max-w-full">
             <Link to="/polityka-prywatnosci" className="text-white opacity-50 basis-auto hover:opacity-100 transition-opacity">
-              Polityka prywatności i cookies
+              Zásady ochrany osobních údajů a cookies
             </Link>
             <div className="text-white opacity-50 basis-auto">
               CS SOFT, Szydłowo 189, 64-930 Szydłowo

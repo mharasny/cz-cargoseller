@@ -40,43 +40,43 @@ const StatsSection = () => {
   const stats = [
     {
       icon: carIconNew,
-      title: "3 giełdy",
-      description: "Dodaj ofertę jeden raz, a my opublikujemy ją na giełdach Trans, TIMOCOM, Teleroute"
+      title: "3 burzy",
+      description: "Přidejte nabídku jednou a my ji zveřejníme na burzách Trans, TIMOCOM, Teleroute"
     },
     {
       icon: timeIconNew,
       title: "70%",
-      description: "O tyle zredukujemy czas poświęcany na zarządzanie ofertami na giełdach"
+      description: "O tolik snížíme čas věnovaný správě nabídek na burzách"
     },
     {
       icon: costIcon,
-      title: "50k zł",
-      description: "To koszt pracy wpisania 67 000 ofert na kilka giełd, zredukujemy to o min. 50%"
+      title: "50k Kč",
+      description: "To je cena práce zadání 67 000 nabídek na několik burz, snížíme to o min. 50%"
     },
     {
       icon: clickIcon,
       title: "1 x",
-      description: "Kliknij raz, aby odświeżyć lub usunąć wiele ofert na 3 giełdach naraz"
+      description: "Klikněte jednou pro obnovení nebo odstranění mnoha nabídek na 3 burzách najednou"
     },
     {
       icon: implementationIcon,
       title: "30 min.",
-      description: "Tylko tyle zajmie wdrożenie nowego narzędzia w firmie/zespole."
+      description: "Pouze tolik zabere implementace nového nástroje ve firmě/týmu."
     },
     {
       icon: publishIcon,
       title: "< 1 min.",
-      description: "Opublikujesz ofertę na 3 giełdy + wyślesz mailing z listą ładunków"
+      description: "Zveřejníte nabídku na 3 burzy + odešlete mailing se seznamem nákladů"
     },
     {
       icon: findIcon,
       title: "0 min.",
-      description: "Nie poświęcisz minuty na szukanie wolnych pojazdów, a zobaczysz wyniki z 2 giełd"
+      description: "Nestrávíte minutu hledáním volných vozidel a uvidíte výsledky ze 2 burz"
     },
     {
       icon: priceIcon,
-      title: "~ 29zł",
-      description: "To średnia opłata miesięczna za konto użytkownika w CARGOseller"
+      title: "~ 7€",
+      description: "To je průměrný měsíční poplatek za uživatelský účet v CARGOseller"
     }
   ];
 
@@ -87,7 +87,7 @@ const StatsSection = () => {
           cargo
         </span>
         <span style={{color: '#66BC98', fontSize: '42px', fontWeight: '600', letterSpacing: '1.26px', textTransform: 'lowercase'}}>seller</span>
-        <span style={{color: '#4D4D4D', fontSize: '42px', fontWeight: '600', letterSpacing: '1.26px', textTransform: 'lowercase'}}> w liczbach</span>
+        <span style={{color: '#4D4D4D', fontSize: '42px', fontWeight: '600', letterSpacing: '1.26px', textTransform: 'lowercase'}}> v číslech</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20 max-md:mt-10">
         {stats.map((stat, index) => (

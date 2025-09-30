@@ -12,8 +12,8 @@ const languages = [
   { code: 'gb', name: 'English', url: 'https://cargoseller.co.uk', flag: '🇬🇧' },
   { code: 'at', name: 'Österreich', url: 'https://cargoseller.at', flag: '🇦🇹' },
   { code: 'nl', name: 'Nederland', url: 'https://cargoseller.nl', flag: '🇳🇱' },
-  { code: 'pl', name: 'Polska', url: 'https://cargoseller.pl', flag: '🇵🇱', active: true },
-  { code: 'cz', name: 'Česko', url: 'https://cargoseller.cz', flag: '🇨🇿' },
+  { code: 'pl', name: 'Polska', url: 'https://cargoseller.pl', flag: '🇵🇱' },
+  { code: 'cz', name: 'Česko', url: 'https://cargoseller.cz', flag: '🇨🇿', active: true },
   { code: 'sk', name: 'Slovensko', url: 'https://cargoseller.sk', flag: '🇸🇰' },
   { code: 'es', name: 'Español', url: 'https://cargoseller.es', flag: '🇪🇸' },
   { code: 'lt', name: 'Lietuvių', url: 'https://cargoseller.lt', flag: '🇱🇹' },
@@ -83,14 +83,14 @@ const Header = () => {
           <a href={getNavLink('funkcjonalnosci')} className="justify-center items-start flex flex-col w-[122px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                O systemie 
+                O systému 
               </div>
             </div>
           </a>
           <a href={getNavLink('cennik')} className="justify-center items-start flex flex-col w-[89px] h-[73px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                Cennik 
+                Ceník 
               </div>
             </div>
           </a>
@@ -104,14 +104,14 @@ const Header = () => {
           <a href="https://app.cargoseller.pl/register" className="justify-center items-start flex h-[73px] flex-col w-[124px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                Załóż konto
+                Vytvořit účet
               </div>
             </div>
           </a>
           <a href="https://app.cargoseller.pl/login" className="items-start flex flex-col h-[73px] text-[#66BC98] font-bold justify-center w-[122px] bg-[#4D4D4D] px-2.5 py-2 gap-2.5 rounded-[0_8px_8px_0] hover:bg-gray-600 transition-colors">
             <div className="flex w-full h-full items-center gap-2.5 justify-center p-2.5">
               <div className="font-roboto-condensed text-lg font-bold leading-6" style={{color: '#66BC98'}}>
-                Zaloguj się
+                Přihlásit se
               </div>
             </div>
           </a>
@@ -146,7 +146,7 @@ const Header = () => {
                   <div className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors cursor-pointer">
                     <span className="text-2xl mr-2">{activeLanguage.flag}</span>
                     <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                      Język / Language
+                      Jazyk / Language
                     </div>
                   </div>
                 </DropdownMenuTrigger>
@@ -169,14 +169,14 @@ const Header = () => {
             <div className="flex flex-col border-b border-gray-600">
               <a href={getNavLink('funkcjonalnosci')} className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                  O systemie 
+                  O systému 
                 </div>
               </a>
             </div>
             <div className="flex flex-col border-b border-gray-600">
               <a href={getNavLink('cennik')} className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                  Cennik 
+                  Ceník 
                 </div>
               </a>
             </div>
@@ -190,14 +190,14 @@ const Header = () => {
             <div className="flex flex-col border-b border-gray-600">
               <a href="https://app.cargoseller.pl/register" className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="text-white font-roboto-condensed text-lg font-normal leading-6">
-                  Załóż konto
+                  Vytvořit účet
                 </div>
               </a>
             </div>
             <div className="flex flex-col">
               <a href="https://app.cargoseller.pl/login" className="flex w-full items-center justify-center p-4 hover:bg-gray-600 transition-colors">
                 <div className="font-roboto-condensed text-lg font-bold leading-6" style={{color: '#66BC98'}}>
-                  Zaloguj się
+                  Přihlásit se
                 </div>
               </a>
             </div>
