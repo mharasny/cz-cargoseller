@@ -21,7 +21,7 @@ const ContactSection = () => {
               <div className="flex w-full items-center gap-[30px] mt-2 px-2">
                 <img src="https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/4ffd56c63efa1337d242ba3e0b7eae6975e73353?placeholderIfAbsent=true" alt="Phone" className="aspect-[0.93] object-contain w-[37px] self-stretch shrink-0 my-auto rounded-[0px_0px_0px_0px]" />
                 <div className="text-white self-stretch my-auto">
-                  +48 792 003 967
+                  +420 730 827 828
                 </div>
               </div>
               
