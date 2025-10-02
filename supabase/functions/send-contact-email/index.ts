@@ -30,7 +30,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send email to the company
     const emailResponse = await resend.emails.send({
       from: "CARGOseller <onboarding@resend.dev>",
-      to: ["wioleta@cargoseller.cz"],
+      to: ["marek@cargoseller.pl"],
       subject: `Nová zpráva z kontaktního formuláře od ${name}`,
       html: `
         <h2>Nová zpráva z kontaktního formuláře</h2>
