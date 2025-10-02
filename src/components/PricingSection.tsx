@@ -95,7 +95,7 @@ const PricingSection = () => {
     {
       planName: "Start",
       price: "60 € / měs.",
-      usersIncluded: "20 uživatelé v ceně",
+      usersIncluded: "3 uživatelé v ceně",
       additionalUserPrice: "15 € (netto) poplatek za dalšího uživatele",
       iconSrc: "https://api.builder.io/api/v1/image/assets/73b29f1caf414e8dadec59a4cd659ee3/cf28d705fe3ee1489b108e35dd077b12b7932836?placeholderIfAbsent=true",
       isHighlighted: true
