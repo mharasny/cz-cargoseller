@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { supabase } from '@/integrations/supabase/client';
+import { toast } from 'sonner';
 
 interface FormData {
   name: string;
@@ -25,20 +27,37 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the data to your backend
-    alert('Formulář byl odeslán!');
-    
-    // Reset form
-    setFormData({
-      name: '',
-      company: '',
-      phone: '',
-      email: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      toast.success('Zpráva byla úspěšně odeslána!');
+      
+      // Reset form
+      setFormData({
+        name: '',
+        company: '',
+        phone: '',
+        email: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error('Nepodařilo se odeslat zprávu. Zkuste to prosím znovu.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -109,10 +128,11 @@ const ContactForm = () => {
       
       <button
         type="submit"
-        className="justify-center items-stretch flex min-h-[51px] w-[210px] max-w-full flex-col text-white whitespace-nowrap text-center bg-[#66BC98] mt-6 px-8 py-3.5 rounded-3xl max-md:px-5 hover:bg-[#5aa085] transition-colors"
+        disabled={isSubmitting}
+        className="justify-center items-stretch flex min-h-[51px] w-[210px] max-w-full flex-col text-white whitespace-nowrap text-center bg-[#66BC98] mt-6 px-8 py-3.5 rounded-3xl max-md:px-5 hover:bg-[#5aa085] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <div className="text-white">
-          Odeslat
+          {isSubmitting ? 'Odesílání...' : 'Odeslat'}
         </div>
       </button>
     </form>
